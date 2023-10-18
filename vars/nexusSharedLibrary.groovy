@@ -1,4 +1,4 @@
-def call () {
+
     def npm_package = {
         echo 'running npm package'
         sh 'npm install'
@@ -19,7 +19,6 @@ def call () {
             echo "image pushed successfully "
         }
     }
-}
 
 
 // stage('Nexus Image Push'){
