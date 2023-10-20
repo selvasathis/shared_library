@@ -1,3 +1,7 @@
 def call(scm-checkout) {
-    git branch: 'main', url: 'https://github.com/selvasathis/my-shrdlib-proj.git'
+    checkout([
+        $class: 'GitSCM',
+        branches: [[name:  stageParams.branch ]],
+        userRemoteConfigs: [[ url: stageParams.url ]]
+    ])
 }
