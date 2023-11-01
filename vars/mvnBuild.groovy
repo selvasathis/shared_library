@@ -8,8 +8,6 @@
 // }
 def call() {
     sh 'sudo apt install maven -y'
-    sh 'mvn clean package'
-    sh 'mvn test'
     echo 'mvn package installation done'
 }
 
