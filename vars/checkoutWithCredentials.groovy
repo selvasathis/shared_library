@@ -6,7 +6,7 @@ def call(Map config) {
     node {
         checkout([
             $class: 'GitSCM',
-            branches: [[name: '*/master']],
+            branches: [[name: '*/main']],
             userRemoteConfigs: [[url: scmUrl, credentialsId: credentialsId]],
             doGenerateSubmoduleConfigurations: false,
             extensions: [[$class: 'CleanBeforeCheckout']],
