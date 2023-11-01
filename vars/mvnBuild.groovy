@@ -7,7 +7,7 @@
 //     echo 'mvn test done'
 // }
 def call() {
-    sh 'mvn clean package'
+    sh 'sudo apt install maven'
     echo 'mvn claen package done'
 }
 // def call('mvn clean') {
